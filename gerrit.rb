@@ -21,5 +21,7 @@ class Gerrit < Formula
     mkdir_p prefix/"plugins"
     (prefix/"plugins").install "plugins/uploadvalidator.jar"
     (prefix/"plugins").install "plugins/avatars-gravatar.jar"
+
+    system "java", "-jar", bin/"gerrit.war", "init", "--batch"
   end
 end
