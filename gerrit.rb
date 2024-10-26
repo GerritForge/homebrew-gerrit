@@ -14,7 +14,8 @@ class Gerrit < Formula
   depends_on "openssh"
 
   def install
-    etc.install "etc/gerrit.config"
+    mkdir_p prefix/"etc"
+    (prefix/"etc").install "etc/gerrit.config"
     bin.install "bin/gerrit.war"
     lib.install "lib/out-of-the-box.jar"
 
@@ -22,6 +23,6 @@ class Gerrit < Formula
     (prefix/"plugins").install "plugins/uploadvalidator.jar"
     (prefix/"plugins").install "plugins/avatars-gravatar.jar"
 
-    system "java", "-jar", bin/"gerrit.war", "init", "--batch"
+    system "java", "-jar", bin/"gerrit.war", "init", "-d", prefix, "--batch"
   end
 end
