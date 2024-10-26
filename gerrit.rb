@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class Blocksite < Formula
+class Gerrit < Formula
   desc ""
   homepage "https://www.gerritcodereview.com"
   version "3.11.0-rc0"
