@@ -6,7 +6,7 @@ class Gerrit < Formula
   homepage "https://www.gerritcodereview.com"
   version "3.11.0-rc0"
   url "https://github.com/GerritForge/homebrew-gerrit/releases/download/v3.11.0-rc0/gerrit-3.11.0-rc0.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "adcabe126fce791f02021d55698e410ec509275cd39acf4c1cc64d75087f4221"
   version "3.11.0-rc0"
   
   depends_on "openjdk@21"
