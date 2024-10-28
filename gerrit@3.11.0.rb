@@ -27,6 +27,9 @@ class GerritAT3110 < Formula
     (var/"gerrit/plugins").install_symlink Dir[prefix/"plugins/*"]
     (var/"gerrit/lib").install_symlink Dir[lib/"*"]
 
-    system "java", "-jar", bin/"gerrit.war", "init", "-d", (var/"gerrit"), "--batch", "--install-all-plugins"
+    system "java", "-jar", bin/"gerrit.war", "init", "-d", (var/"gerrit"), "--batch", "--install-all-plugins", "--no-auto-start"
+    ohai "Gerrit site initialized in ", (var/"gerrit")
+    ohai "================================"
+    ohai" To start Gerrit: ", (var/"gerrit/bin/gerrit.sh start)
   end
 end
