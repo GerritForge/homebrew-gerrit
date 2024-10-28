@@ -25,6 +25,7 @@ class GerritAT3110 < Formula
     (var/"gerrit"/"etc").install "etc/gerrit.config"
 
     (var/"gerrit").install_symlink prefix/"plugins"
+    (var/"gerrit").install_symlink lib
 
     system "java", "-jar", bin/"gerrit.war", "init", "-d", (var/"gerrit"), "--batch", "--install-all-plugins"
   end
