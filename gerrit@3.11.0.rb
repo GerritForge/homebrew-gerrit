@@ -20,11 +20,12 @@ class GerritAT3110 < Formula
     bin.install "bin/gerrit.war"
     lib.install "lib/out-of-the-box.jar"
 
-    mkdir_p opt_prefix/"etc"
-    (opt_prefix/"etc").install "etc/gerrit.config"
+    mkdir_p var/"gerrit"
+    mkdir_p var/"gerrit"/"etc"
+    (var/"gerrit"/"etc").install "etc/gerrit.config"
 
-    opt_prefix.install_symlink opt_prefix/"plugins"
+    (var/"gerrit").install_symlink prefix/"plugins"
 
-    system "java", "-jar", bin/"gerrit.war", "init", "-d", opt_prefix, "--batch", "--install-all-plugins"
+    system "java", "-jar", bin/"gerrit.war", "init", "-d", (var/"gerrit"), "--batch", "--install-all-plugins"
   end
 end
