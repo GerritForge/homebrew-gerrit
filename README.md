@@ -4,7 +4,7 @@
 
 1. Install the GerritForge/gerrit tap
    ```sh
-   brew tag GerritForge/gerrit
+   brew tap GerritForge/gerrit
    ```
 2. Discover the Gerrit versions available
    ```sh
