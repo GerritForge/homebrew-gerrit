@@ -28,8 +28,13 @@ class GerritAT3110 < Formula
     (var/"gerrit/lib").install_symlink Dir[lib/"*"]
 
     system "java", "-jar", bin/"gerrit.war", "init", "-d", (var/"gerrit"), "--batch", "--install-all-plugins", "--no-auto-start"
-    ohai "Gerrit site initialized in ", (var/"gerrit")
-    ohai "================================"
-    ohai" To start Gerrit: ", (var/"gerrit/bin/gerrit.sh start")
+    ohai ""
+    ohai "Gerrit site initialized in " + (var/"gerrit")
+    ohai "---------------------------------------------------------"
+    ohai " * To start Gerrit: " + (var/"gerrit/bin/gerrit.sh start")
+    ohai " * Gerrit will then be available at http://localhost:8080"
+    ohai ""
+    ohai " * To stop  Gerrit: " + (var/"gerrit/bin/gerrit.sh stop")
+    ohai ""
   end
 end
