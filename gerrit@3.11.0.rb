@@ -1,13 +1,13 @@
 # typed: false
 # frozen_string_literal: true
 
-class Gerrit < Formula
+class GerritAT3110 < Formula
   desc ""
   homepage "https://www.gerritcodereview.com"
-  version "3.11.0-rc0"
-  url "https://github.com/GerritForge/homebrew-gerrit/releases/download/v3.11.0-rc0/gerrit-3.11.0-rc0.tar.gz"
-  sha256 "adcabe126fce791f02021d55698e410ec509275cd39acf4c1cc64d75087f4221"
-  version "3.11.0-rc0"
+  version "3.11.0-rc1"
+  url "https://tarball.gerritforge.com/gerrit-3.11.0-rc1.tar.gz"
+  sha256 "5f8d713439b2ceab8cb085671018de1237beb3e2aaa15a4827b61693703c018d
+  version "3.11.0-rc1"
   
   depends_on "openjdk@21"
   depends_on "git"
