@@ -22,6 +22,6 @@ class GerritAT3110 < Formula
     (prefix/"plugins").install "plugins/uploadvalidator.jar"
     (prefix/"plugins").install "plugins/avatars-gravatar.jar"
 
-    system "java", "-jar", bin/"gerrit.war", "init", "-d", prefix, "--batch", "--install-all-plugins"
+    system "java", "-jar", bin/"gerrit.war", "init", "-d", (prefix/".."), "--batch", "--install-all-plugins"
   end
 end
