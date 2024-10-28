@@ -30,6 +30,6 @@ class GerritAT3110 < Formula
     system "java", "-jar", bin/"gerrit.war", "init", "-d", (var/"gerrit"), "--batch", "--install-all-plugins", "--no-auto-start"
     ohai "Gerrit site initialized in ", (var/"gerrit")
     ohai "================================"
-    ohai" To start Gerrit: ", (var/"gerrit/bin/gerrit.sh start)
+    ohai" To start Gerrit: ", (var/"gerrit/bin/gerrit.sh start")
   end
 end
