@@ -7,7 +7,6 @@ class GerritAT3110 < Formula
   version "3.11.0-rc1"
   url "https://tarball.gerritforge.com/gerrit-3.11.0-rc1.tar.gz"
   sha256 "5f8d713439b2ceab8cb085671018de1237beb3e2aaa15a4827b61693703c018d
-  version "3.11.0-rc1"
   
   depends_on "openjdk@21"
   depends_on "git"
