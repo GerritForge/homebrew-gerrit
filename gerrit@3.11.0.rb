@@ -24,8 +24,8 @@ class GerritAT3110 < Formula
     mkdir_p var/"gerrit"/"etc"
     (var/"gerrit"/"etc").install "etc/gerrit.config"
 
-    (var/"gerrit").install_symlink prefix/"plugins"
-    (var/"gerrit").install_symlink lib
+    (var/"gerrit/plugins").install_symlink Dir[prefix/"plugins/*"]
+    (var/"gerrit/lib").install_symlink Dir[lib/"*"]
 
     system "java", "-jar", bin/"gerrit.war", "init", "-d", (var/"gerrit"), "--batch", "--install-all-plugins"
   end
