@@ -13,15 +13,18 @@ class GerritAT3110 < Formula
   depends_on "openssh"
 
   def install
-    mkdir_p prefix/"etc"
-    (prefix/"etc").install "etc/gerrit.config"
-    bin.install "bin/gerrit.war"
-    lib.install "lib/out-of-the-box.jar"
-
     mkdir_p prefix/"plugins"
     (prefix/"plugins").install "plugins/uploadvalidator.jar"
     (prefix/"plugins").install "plugins/avatars-gravatar.jar"
 
-    system "java", "-jar", bin/"gerrit.war", "init", "-d", (prefix/".."), "--batch", "--install-all-plugins"
+    bin.install "bin/gerrit.war"
+    lib.install "lib/out-of-the-box.jar"
+
+    mkdir_p opt_prefix/"etc"
+    (opt_prefix/"etc").install "etc/gerrit.config"
+
+    opt_prefix.install_symlink opt_prefix/"plugins"
+
+    system "java", "-jar", bin/"gerrit.war", "init", "-d", opt_prefix, "--batch", "--install-all-plugins"
   end
 end
