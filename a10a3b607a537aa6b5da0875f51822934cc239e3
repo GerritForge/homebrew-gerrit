@@ -16,6 +16,24 @@
       "message": "Shouldn\u0027t this be updated too?",
       "revId": "a10a3b607a537aa6b5da0875f51822934cc239e3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad30fd3b_8c239a5b",
+        "filename": "gerrit@3.11.0.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-11-04T21:16:37Z",
+      "side": 1,
+      "message": "Yes, good point. Let me wait for the tarball packaging to be published and then I\u0027ll update the checksums.",
+      "parentUuid": "b4f21ba9_2486dcf0",
+      "revId": "a10a3b607a537aa6b5da0875f51822934cc239e3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
