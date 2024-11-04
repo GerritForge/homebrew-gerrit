@@ -34,6 +34,24 @@
       "parentUuid": "b4f21ba9_2486dcf0",
       "revId": "a10a3b607a537aa6b5da0875f51822934cc239e3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ecb21183_c2d45a5b",
+        "filename": "gerrit@3.11.0.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-11-04T22:04:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ad30fd3b_8c239a5b",
+      "revId": "a10a3b607a537aa6b5da0875f51822934cc239e3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
