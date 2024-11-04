@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4f21ba9_2486dcf0",
+        "filename": "gerrit@3.11.0.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2024-11-04T21:10:54Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be updated too?",
+      "revId": "a10a3b607a537aa6b5da0875f51822934cc239e3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
