@@ -4,9 +4,9 @@
 class GerritAT3110 < Formula
   desc ""
   homepage "https://www.gerritcodereview.com"
-  version "3.11.0-rc5"
-  url "https://tarball.gerritforge.com/gerrit-3.11.0-rc5.tar.gz"
-  sha256 "97bdaf49d49cd355a9e671b5e5935823ed94950f136081d16c83579418c266d7"
+  version "3.11.0"
+  url "https://tarball.gerritforge.com/gerrit-3.11.0.tar.gz"
+  sha256 "f18c23f6c0911012ec03dbbde09788d4d6d470e977312244c416dd6e0d3b4ae1"
 
   depends_on "openjdk@21"
   depends_on "git"
