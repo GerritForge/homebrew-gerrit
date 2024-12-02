@@ -2,9 +2,9 @@
 
 ## To install Gerrit with Homebrew
 
-1. Install the GerritForge/gerrit tap
+1. Install the GerritCodeReview/gerrit tap
    ```sh
-   brew tap GerritForge/gerrit
+   brew tap GerritCodeReview/gerrit
    ```
 2. Discover the Gerrit versions available
    ```sh
